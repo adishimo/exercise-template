@@ -4,8 +4,8 @@ function run() {
     let out = "";
 /**/
     // write your code here
-    // out = input + 5;
-
+let x = JSON.parse(input)
 /**/
+out = Array.isArray(x)
     output.innerText = out;
 }
