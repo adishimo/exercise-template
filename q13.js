@@ -1,16 +1,11 @@
-let arr = [];
-const addItem = () => {
-  const input = document.getElementById("input1");
-  const val = input.value;
-  input.value = "";
-  arr.push(val);
-};
-const diplay = () => {
-  const list = document.createElement("ul");
-  for (let i = 0; i < arr.length; i++) {
-    const item = document.createElement("li");
-    item.appendChild(document.createTextNode(`element is ${arr[i]}`));
-    list.appendChild(item);
-  }
-  document.getElementById("items").innerHTML = list.innerHTML;
-};
+let arr = []
+function display(input) {
+  
+arr.push(input)
+return arr
+
+}
+console.log(display("Adi"))
+display("Shalom")
+display("adi")
+let name="amit"
